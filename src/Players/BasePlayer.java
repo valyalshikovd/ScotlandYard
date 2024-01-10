@@ -9,7 +9,7 @@ public class BasePlayer implements PlayerInterface {
     private int busTicketCounter;
     private int boatTicketCounter;
     private int undergroundTicketCounter;
-    private Move move;
+    private MoveInterface move;
 
     public Node getCurrentField() {
         return currentField;
@@ -51,24 +51,24 @@ public class BasePlayer implements PlayerInterface {
         this.undergroundTicketCounter = undergroundTicketCounter;
     }
 
-    public Move getMove() {
+    @Override
+    public MoveInterface getMove() {
         return move;
     }
+
 
     public void setMove(Move move) {
         this.move = move;
     }
 
-    public BasePlayer(Node currentField, int taxiTicketCounter, int busTicketCounter, int boatTicketCounter, int undergroundTicketCounter) {
+    public BasePlayer(Node currentField, int taxiTicketCounter, int busTicketCounter, int boatTicketCounter, int undergroundTicketCounter, MoveInterface move) {
         this.currentField = currentField;
         this.taxiTicketCounter = taxiTicketCounter;
         this.busTicketCounter = busTicketCounter;
         this.boatTicketCounter = boatTicketCounter;
         this.undergroundTicketCounter = undergroundTicketCounter;
+        this.move = move;
     }
 
-    @Override
-    public MoveInterface move() {
-        return move;
-    }
+
 }

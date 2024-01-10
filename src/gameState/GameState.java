@@ -24,7 +24,7 @@ public class GameState {
     }
 
     public void nextStep(){
-        MoveInterface move = players.get(currentPlayerIndex).move();
+        MoveInterface move = players.get(currentPlayerIndex).getMove();
         currentPlayerIndex += 1;
         if(currentPlayerIndex == players.size()){
             currentPlayerIndex =0;

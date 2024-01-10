@@ -4,7 +4,7 @@ import field.Node;
 
 public interface PlayerInterface {
 
-    public MoveInterface move();
+
     public Node getCurrentField();
     public void setCurrentField(Node currentField);
     public int getTaxiTicketCounter();
@@ -17,7 +17,7 @@ public interface PlayerInterface {
 
     public void setUndergroundTicketCounter(int undergroundTicketCounter);
 
-    public Move getMove();
+    public MoveInterface getMove();
 
     public void setMove(Move move);
 }

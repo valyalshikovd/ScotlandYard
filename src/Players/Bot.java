@@ -1,10 +1,11 @@
 package Players;
 
-public class Bot implements PlayerInterface {
+import field.Node;
 
+public class Bot extends BasePlayer {
 
-    @Override
-    public MoveInterface move() {
-
+    public Bot(Node currentField, int taxiTicketCounter, int busTicketCounter, int boatTicketCounter, int undergroundTicketCounter, MoveInterface move) {
+        super(currentField, taxiTicketCounter, busTicketCounter, boatTicketCounter, undergroundTicketCounter, move);
     }
+
 }
