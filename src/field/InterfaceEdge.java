@@ -1,4 +1,6 @@
 package field;
 
-public class InterfaceEdge {
+public interface InterfaceEdge {
+
+
 }
