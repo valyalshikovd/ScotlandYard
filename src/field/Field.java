@@ -1,5 +1,6 @@
 package field;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Field {
@@ -7,7 +8,7 @@ public class Field {
     private static int countOfNodes = 199;
     private static int countOfEdges  = 468;
 
-    private HashMap<Integer, Node> nodes = new HashMap;
+    private ArrayList<Node> nodes = new ArrayList();
 
 
     public void createField(){

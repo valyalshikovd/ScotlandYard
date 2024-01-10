@@ -1,5 +1,11 @@
+import gameState.GameState;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        GameState gs = new GameState();
+        while (true){
+            gs.nextStep();
+        }
     }
 }

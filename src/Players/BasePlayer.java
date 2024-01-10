@@ -4,12 +4,13 @@ import field.Node;
 
 public class BasePlayer implements PlayerInterface {
 
-    private Node currentField;
-    private int taxiTicketCounter;
-    private int busTicketCounter;
-    private int boatTicketCounter;
-    private int undergroundTicketCounter;
-    private MoveInterface move;
+    protected Node currentField;
+    protected int taxiTicketCounter;
+    protected int busTicketCounter;
+    protected int boatTicketCounter;
+    protected int undergroundTicketCounter;
+    protected MoveInterface move;
+    protected Roles role;
 
     public Node getCurrentField() {
         return currentField;
@@ -61,13 +62,13 @@ public class BasePlayer implements PlayerInterface {
         this.move = move;
     }
 
-    public BasePlayer(Node currentField, int taxiTicketCounter, int busTicketCounter, int boatTicketCounter, int undergroundTicketCounter, MoveInterface move) {
+    public BasePlayer(Node currentField, int taxiTicketCounter, int busTicketCounter, int boatTicketCounter, int undergroundTicketCounter, Roles role) {
         this.currentField = currentField;
         this.taxiTicketCounter = taxiTicketCounter;
         this.busTicketCounter = busTicketCounter;
         this.boatTicketCounter = boatTicketCounter;
         this.undergroundTicketCounter = undergroundTicketCounter;
-        this.move = move;
+        this.role = role;
     }
 
 
