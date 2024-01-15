@@ -10,7 +10,7 @@ import java.util.Stack;
 
 public class GameState {
 
-    private final Stack<MoveInterface> stackPreviosSteps = new Stack<>();
+    private final Stack<MoveInterface> stackPreviousSteps = new Stack<>();
     private final Stack<MoveInterface> stackFutureSteps = new Stack<>();
     private final List<PlayerInterface> players = new ArrayList<>();
 
@@ -18,8 +18,8 @@ public class GameState {
     private int currentPlayerIndex = 0;
 
     public GameState() {
-        players.add(new Bot(null, 0,0,0,0,Roles.MisterX));
-        players.add(new Bot(null, 0,0,0,0,Roles.Detective));
+        players.add(new Bot(null, 0,0,0,0, Roles.MisterX));
+        players.add(new Bot(null, 0,0,0,0, Roles.Detective));
     }
 
     public void nextStep(){
@@ -33,6 +33,6 @@ public class GameState {
         }
         System.out.println(move);
         move.getMove();
-        stackPreviosSteps.add(move);
+        stackPreviousSteps.add(move);
     }
 }

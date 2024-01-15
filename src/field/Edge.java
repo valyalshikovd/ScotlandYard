@@ -1,6 +1,6 @@
 package field;
 
-public class Edge implements  InterfaceEdge{
+public class Edge implements InterfaceEdge{
     private Node firstNode;
     private Node SecondNode;
 

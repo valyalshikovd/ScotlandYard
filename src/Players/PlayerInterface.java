@@ -3,8 +3,6 @@ package Players;
 import field.Node;
 
 public interface PlayerInterface {
-
-
     public Node getCurrentField();
     public void setCurrentField(Node currentField);
     public int getTaxiTicketCounter();

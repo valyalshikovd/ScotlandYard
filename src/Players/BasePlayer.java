@@ -70,6 +70,4 @@ public class BasePlayer implements PlayerInterface {
         this.undergroundTicketCounter = undergroundTicketCounter;
         this.role = role;
     }
-
-
 }
